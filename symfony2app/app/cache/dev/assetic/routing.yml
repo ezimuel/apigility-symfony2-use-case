@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /home/enrico/Lavoro/Apigility/Symfony2_use_case/test_app_symfony2/app/config/routing_dev.yml

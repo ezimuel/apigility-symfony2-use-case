@@ -1,0 +1,5 @@
+zend_con_hello_world:
+    resource: "@BlogExampleBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
