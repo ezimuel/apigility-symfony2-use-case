@@ -40,7 +40,7 @@ class PostResource extends AbstractResourceListener
             try {
                 $publishDate = new \DateTime($data->publishDate);
             } catch (\Exception $e) {
-                return new ApiProblem(400, 'The publish date is not a valid date');
+                return new ApiProblem(422, 'The publish date is not a valid date');
             }    
             $postEntity->setPublishDate($publishDate);
         }
@@ -124,7 +124,7 @@ class PostResource extends AbstractResourceListener
                 try {
                     $publishDate = new \DateTime($data->publishDate);
                 } catch (\Exception $e) {
-                    return new ApiProblem(400, 'The publish date is not a valid date');
+                    return new ApiProblem(422, 'The publish date is not a valid date');
                 }
                 $postEntity->setPublishDate($publishDate);
             }
@@ -163,7 +163,7 @@ class PostResource extends AbstractResourceListener
             try {
                 $publishDate = new \DateTime($data->publishDate);
             } catch (\Exception $e) {
-                return new ApiProblem(400, 'The publish date is not a valid date');
+                return new ApiProblem(422, 'The publish date is not a valid date');
             }
             $postEntity->setPublishDate($publishDate);
             $this->doctrine->flush();
